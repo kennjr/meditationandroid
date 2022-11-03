@@ -3,4 +3,6 @@
     <string name="greeting_string">Good morning, %s</string>
     <string name="greeting_msg">Hope you are having a good day.</string>
     <string name="search_icon_content_description">Search</string>
+    <string name="play_icon_content_description">Play this meditation</string>
+    <string name="start">Start</string>
 </resources>
