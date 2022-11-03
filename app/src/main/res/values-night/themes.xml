@@ -3,12 +3,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Mediation" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/deepblue</item>
-        <item name="colorPrimaryVariant">@color/deepblue</item>
+        <item name="colorPrimary">@color/DeepBlue</item>
+        <item name="colorPrimaryVariant">@color/DeepBlue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/deepblue</item>
-        <item name="colorSecondaryVariant">@color/deepblue</item>
+        <item name="colorSecondary">@color/DeepBlue</item>
+        <item name="colorSecondaryVariant">@color/DeepBlue</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
