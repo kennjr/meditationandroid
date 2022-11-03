@@ -21,30 +21,33 @@ fun ChipsSection(chips: List<String>){
     }
 
     // a lazyRow is a row that's scrollable and also lazily loads the items in it
-    LazyRow{
+    LazyRow(modifier = Modifier.padding(horizontal = 10.dp)){
         items(chips.size){ index: Int ->
 //            chip(value = item, index = index, isLast = , clickEvent = {  }, selectedIndex = selectedChip)
             Box(contentAlignment = Alignment.Center, modifier = if (index == 0) Modifier
                 .padding(start = 5.dp, end = 0.dp, top = 2.5.dp, bottom = 2.5.dp)
                 .clickable { selectedChipIndex = 0 }
                 .clip(
-                    RoundedCornerShape(ROUNDED_CORNER_RADIUS.dp)
+                    RoundedCornerShape(ITEM_ROUNDED_CORNER_RADIUS.dp)
                 )
                 .background(if (index == selectedChipIndex) ButtonBlue else DarkerButtonBlue)
+                .padding(horizontal = 10.dp, vertical = 10.dp)
             else if (index > 0 && index < chips.size) Modifier
                 .padding(horizontal = 5.dp, vertical = 2.5.dp)
                 .clickable { selectedChipIndex = index }
                 .clip(
-                    RoundedCornerShape(ROUNDED_CORNER_RADIUS.dp)
+                    RoundedCornerShape(ITEM_ROUNDED_CORNER_RADIUS.dp)
                 )
                 .background(if (index == selectedChipIndex) ButtonBlue else DarkerButtonBlue)
+                .padding(horizontal = 10.dp, vertical = 10.dp)
             else Modifier
                 .padding(start = 0.dp, end = 5.dp, top = 2.5.dp, bottom = 2.5.dp)
                 .clickable { selectedChipIndex = index }
                 .clip(
-                    RoundedCornerShape(ROUNDED_CORNER_RADIUS.dp)
+                    RoundedCornerShape(ITEM_ROUNDED_CORNER_RADIUS.dp)
                 )
                 .background(if (index == selectedChipIndex) ButtonBlue else DarkerButtonBlue)
+                .padding(horizontal = 10.dp, vertical = 10.dp)
             ) {
                 Text(text = chips[index], color = TextWhite)
             }
